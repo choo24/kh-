@@ -12,10 +12,10 @@ public class MinKyuGame {
 				int num1 = (int)(Math.random()*10);
 				int num2 = (int)(Math.random()*10);
 				int userNum;
-				userNum = Integer.parseInt(sc.nextLine().trim());
 				
 				System.out.println("-----------");
 				System.out.print(num1 + " * " + num2 + " = ");
+				userNum = Integer.parseInt(sc.nextLine().trim());
 				System.out.println("-----------");
 				
 				boolean result = (num1 * num2 == userNum);
