@@ -4,26 +4,9 @@ import java.util.Scanner;
 
 public class GangboonGame {
 
-	public static void main(String[] args) {
-
+	public void gamestart() {
 		Scanner sc = new Scanner(System.in);
-		boolean x = true;
-
-		while ( x ) 
-
-		{
-			System.out.println(" ===== BaskinRobbins31 Game ===== ");
-			System.out.println();
-			System.out.println("1. 게임 시작하기");
-			System.out.println("2. 게임 설명 보기");
-			System.out.println("3. 게임 종료하기");
-			System.out.println();
-			System.out.print("선택 > ");
-
-			int cho = sc.nextInt(); //선택 변수 유저한테서 입력 받기
-			switch (cho)  			    
-			{
-			case 1:
+	
 				// 게임 시작
 				System.out.println("===== 게임 시작 =====");
 				int count = 0;	 // count 값 초기화
@@ -81,36 +64,7 @@ public class GangboonGame {
 					{
 						break;
 					}
-				}
-
-			case 2:
-
-				// 게임 설명 출력
-
-				System.out.println("<< 게임 설명 >>");
-
-				System.out.println();
-
-				System.out.println("유저와 컴퓨터는 차례대로 1부터 31까지의 수를 순차적으로 입력한다." );
-
-			         System.out.println( "한번에 1~3개까지 수를 연달아 입력할 수 있으며, 마지막 31을 부른 사람이 진다. ");
-
-			         System.out.println();
-
-				break;
-				
-			case 3:
-
-				// 게임 종료
-				x = false;
-
-				System.out.println("게임이 종료되었습니다.");
-
-				break;
-			}  
-
-		}	  
-		
+			}
 	}
-
 }
+		
